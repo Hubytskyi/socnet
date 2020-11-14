@@ -1,0 +1,5 @@
+.mainFooter {
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+}

@@ -1,0 +1,21 @@
+.mainMenu {
+    grid-area: nav;
+    height: 400px;
+    display: flex;
+    align-items: center;
+}
+
+.mainMenuList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mainMenuItem {
+    padding-bottom: 20px;
+}
+
+.mainMenuLink {
+    text-decoration: none;
+    color: #333;
+}
