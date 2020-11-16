@@ -4,10 +4,12 @@ import Profile from "./profile/Profile";
 import Posts from "./posts/Posts";
 
 const Content = (props) => {
+
+
   return (
     <section className={s.mainContent}>
       <Profile/>
-      <Posts posts={props}/>
+      <Posts posts={props.posts}/>
     </section>
   )
 };

@@ -1,16 +1,16 @@
 import React from 'react'
-import s from './Posts.module.css'
 import NewPost from "./post/NewPost";
 import Post from "./post/Post";
 
 const Posts = (props) => {
+
+  const postElements = props.posts.map(p => <Post id={p.id} key={p.id} text={p.text} likes={p.likes}/>);
+
   return (
-    <div className={s.posts}>
+    <div>
       <h3>Posts</h3>
       <NewPost/>
-      {props.posts.posts.map(post => {
-        return <Post post={post} key={post.id}/>
-      })}
+      {postElements}
     </div>
   )
 };

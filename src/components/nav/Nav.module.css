@@ -1,21 +1,35 @@
 .mainMenu {
     grid-area: nav;
-    height: 400px;
     display: flex;
-    align-items: center;
+    padding-top: 40px;
+    margin-right: 40px;
 }
 
 .mainMenuList {
     list-style: none;
     margin: 0;
     padding: 0;
-}
-
-.mainMenuItem {
-    padding-bottom: 20px;
+    width: 100%;
 }
 
 .mainMenuLink {
     text-decoration: none;
     color: #333;
+    width: 100%;
+    padding: 10px;
+    display: inline-block;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+    background: transparent;
+}
+
+.mainMenuLink:hover {
+    background-color: rgba(205,205,205, .2);
+}
+
+.mainMenuLink.active {
+    background-color: rgba(205,205,205, .4);
 }
