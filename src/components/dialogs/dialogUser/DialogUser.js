@@ -3,7 +3,7 @@ import s from "./DialogUser.module.css";
 
 const DialogUser = (props) => {
 
-  let path = "/dialogUser/" + props.id;
+  let path = "/dialogs/" + props.id;
 
   return (
     <NavLink key={props.id} className={s.dialogsUserItem} to={path}>

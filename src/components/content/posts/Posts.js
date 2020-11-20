@@ -4,12 +4,15 @@ import Post from "./post/Post";
 
 const Posts = (props) => {
 
-  const postElements = props.posts.map(p => <Post id={p.id} key={p.id} text={p.text} likes={p.likes}/>);
+  const postElements = props.state.contentPage.posts.map(p => <Post id={p.id} key={p.id} text={p.text} likes={p.likes} author={p.author}/>);
 
   return (
     <div>
       <h3>Posts</h3>
-      <NewPost/>
+      <NewPost
+        dispatch={props.dispatch}
+        state={props.state}
+        />
       {postElements}
     </div>
   )

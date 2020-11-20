@@ -8,8 +8,10 @@
 .mainMenuList {
     list-style: none;
     margin: 0;
-    padding: 0;
+    padding: 0 0 20px 0;
     width: 100%;
+    height: max-content;
+    border-bottom: 1px dashed #cdcdcd;
 }
 
 .mainMenuLink {

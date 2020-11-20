@@ -14,15 +14,20 @@ const App = (props) => {
         <Header/>
         <Nav/>
         <Route path='/profile' render={() => (
-          <Content posts={props.posts}/>
+          <Content
+            state={props.state}
+            dispatch={props.dispatch}
+          />
         )}/>
         <Route path='/dialogs' render={() => (
-          <Dialogs dialogs={props.dialogs} messages={props.messages}/>
+          <Dialogs
+            dispatch={props.dispatch}
+            state={props.state}/>
         )}/>
         <Footer/>
       </div>
     </BrowserRouter>
   );
-}
+};
 
 export default App;

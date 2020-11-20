@@ -1,4 +1,4 @@
-.post {
+postLike.post {
     padding: 20px 0;
     border-bottom: 1px dashed #cdcdcd;
 }
@@ -24,4 +24,9 @@
 .postFooter {
     display: flex;
     justify-content: space-between;
+}
+
+.postLike button {
+    padding: 5px;
+    font-size: 10px;
 }

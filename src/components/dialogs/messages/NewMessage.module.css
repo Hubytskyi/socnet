@@ -1,10 +1,11 @@
-.addPostForm {
-    margin-bottom: 40px;
+.newMessage {
+    width: 100%;
     display: flex;
     flex-direction: column;
+    margin-top: 20px;
     align-items: flex-end;
 }
 
-.addPostTextarea {
+textarea[name="new-message"] {
     margin-bottom: 10px;
 }
